@@ -46,7 +46,7 @@ rubik: 300, 400, 500, 600
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  /* font-family: "Rubik", sans-serif; */
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -137,7 +137,13 @@ h4 {
 /* START HERE */
 
 .page {
-  background-color: lightcyan;
+  /* background-color: lightcyan; */
+  background: linear-gradient(
+    45deg,
+    rgb(65 88 208) 0%,
+    rgb(200 80 192) 50%,
+    rgb(255, 204, 112) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,4 +181,9 @@ h4 {
 .subTitle {
   color: lightcoral;
   /* text-align: center; */
+}
+.answer-content {
+  max-height: 600px;
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
